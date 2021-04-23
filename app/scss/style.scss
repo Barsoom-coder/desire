@@ -217,9 +217,6 @@
 			background: #6D7278;
 		}
 	}
-	&__text {
-
-	}
 	&__images {
 		max-width: 485px;
 	}
@@ -307,7 +304,7 @@
 .collection {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 30px;
+	grid-column-gap: 30px;
 	&__item {
 		position: relative;
 		&:hover {
@@ -358,5 +355,35 @@
 		font-weight: 600;
 		font-size: 14px;
 		color: #707070;
+	}
+}
+
+.decor {
+	padding: 170px 0 155px;
+	background-image: url(../images/decor-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 600px;
+	&__title {
+		max-width: 730px;
+		color: $title;
+		font-size: 60px;
+		line-height: 80px;
+		padding-bottom: 22px;
+		margin-bottom: 22px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			width: 80%;
+			height: 1px;
+			margin: 0 auto;
+			left: 0;
+			background: #6D7278;
+	}
+	&__text {
+			max-width: 540px;	
+		}
 	}
 }
