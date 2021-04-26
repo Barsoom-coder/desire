@@ -171,6 +171,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
+	z-index: 5;
 	width: 100%;
 	max-width: 694px;
 	background-color: #FFF;
@@ -502,5 +503,44 @@
 		width: 100%;
 		height: 100%;
 		max-height: 1148px;
+	}
+}
+
+.blog-box {
+	padding-bottom: 100px;
+	&__title {
+		@extend %title-font;
+		color: $title;
+		font-size: 36px;
+		line-height: 51px;
+		margin: 0 auto 30px;
+		max-width: 430px;
+		text-align: center;
+	}
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+	&__img-link {
+		margin-bottom: 19px;
+		display: inline-block;
+	}
+	&__links {
+		margin-bottom: 9px;
+		font-size: 14px;
+		font-weight: 600;
+		color: #707070;
+	}
+	&__date,
+	&__author,
+	&__theme {
+		color: inherit;
+	}
+	&__item-title {
+		color: $title;
+		font-size: 24px;
+		line-height: 38px;
+		@extend %title-font;
 	}
 }
