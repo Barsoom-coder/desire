@@ -5,3 +5,11 @@ $defolt: #5A5A5A;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
