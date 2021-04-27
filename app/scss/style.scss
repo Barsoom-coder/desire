@@ -810,7 +810,42 @@
 	}
 }
 
-
+.contact-slider {
+	padding-bottom: 102px;
+	&__link {
+		position: relative;
+		margin-bottom: 20px;
+		&:hover {
+			.contact-slider__title {
+				opacity: 1;
+			}
+		}
+	}
+	&__img {
+		width: 170px;
+		height: 170px;
+		object-fit: cover;
+	}
+	&__title {
+		transition: all .5s;
+		display: flex;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		line-height: 22px;
+		padding: 0 5px;
+		padding-right: 24px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(#fff, .6);
+		color: $title;
+		@extend %title-font; 
+		opacity: 0;
+	}
+}
 
 
 
