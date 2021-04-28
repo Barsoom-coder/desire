@@ -276,6 +276,12 @@
 			grid-column: 1;
 			grid-row: 1;
 		}
+		&.gallery-page {
+				.gallery__item:nth-child(8) {
+					grid-column: 1;
+					grid-row: 1;
+				}
+		}
 	}
 	.inspiration {
 		&__item-text {
