@@ -271,7 +271,7 @@
 	}
 	&__slider-img {
 		margin-left: -10%;
-		min-width: 703px;
+		max-width: 703px;
 		height: 815px;
 		object-fit: cover;
 	}
@@ -334,7 +334,7 @@
 .collection {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-column-gap: 30px;
+	gap: 30px;
 	&__item {
 		position: relative;
 		&:hover {
@@ -393,16 +393,16 @@
 	background-image: url(../images/decor-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 600px;
+	max-height: 600px;
 	&__title {
 		max-width: 730px;
 		color: $title;
+		@extend %title-font;
 		font-size: 60px;
 		line-height: 80px;
 		padding-bottom: 22px;
 		margin-bottom: 22px;
 		position: relative;
-		@extend %title-font;
 		&::after {
 			position: absolute;
 			content: '';
@@ -437,7 +437,7 @@
 		&::before {
 			position: absolute;
 			content: '';
-			bottom: -5 px;
+			bottom: -5px;
 			left: 0;
 			width: 10px;
 			height: 10px;

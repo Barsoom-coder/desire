@@ -1,7 +1,64 @@
+@media (max-width: 1366px) {
+	.collection {
+		grid-template-columns: repeat(3, 1fr);
+		&__image {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.top {
+		&__slider-title {
+			font-size: 62px;
+			line-height: 74px;
+		}
+		&__slider-img {
+			height: 640px;
+		}
+	}
+} 
+
 @media (max-width: 992px) {
 	.footer {
 		&__info {
 			width: 380px;
+		}
+	}
+	.gallery {
+		&__items {
+			gap: 10px;
+		}
+		&__btn {
+			margin: 0;
+			padding: 6px 10px;
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.top {
+		&__inner {
+			&::after {
+				height: 100%;
+			}
+		}
+		&__slider-title {
+			font-size: 44px;
+			line-height: 54px;
+		}
+		&__slider-img {
+			height: 540px;
+		}
+	}
+	.collection {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.works-path{
+		&__item {
+			width: 350px;
+		}
+		&__item--production {
+			margin-left: 50px;
 		}
 	}
 }
@@ -43,7 +100,77 @@
 			margin-right: auto;
 		}
 	}
+	.decor {
+		padding: 70px 0 55px;
+	}
+	.works-path{
+		&__item--measurements {
+			margin-left: 100px;
+		}
+	}
+	.gallery {
+		&__buttons {
+			display: grid;
+		}
+		&__btn {
+			margin-bottom: 10px;
+		}
+	}
 }
+
+@media (max-width: 650px) {
+	.top {
+		&__inner {
+			padding-top: 30px;
+			padding-bottom: 25px;
+		}
+		&__slider-item {
+			.top__slider-img {
+				display: none;
+			}
+		}
+		&__slider-text {
+			margin-bottom: 15px;
+		}
+	}
+	.works-path {
+		&__item {
+			width: 93%;
+		}
+		&__items-box::before,
+		&__item--production::after,
+		&__item--measurements::before {
+			display: none;
+		}
+		&__items-box {
+			border: none;
+			flex-wrap: wrap;
+		}
+		&__item--measurements {
+			margin-left: 0;
+			padding-top: 0;
+			padding-bottom: 38px;
+		}
+		&__item--production {
+			margin-left: 0;
+			order: 1;
+		}
+	}
+	.blog-box {
+		&__items {
+			display: block;
+		}
+		&__img-link {
+			display: block;
+		}
+		&__img {
+			width: 100%;
+		}
+		&__item {
+			margin-bottom: 20px;
+		}
+	}
+} 
 
 @media (max-width: 540px) {
 	.logo {
@@ -95,6 +222,30 @@
 		&__list-link {
 			display: block;
 			padding: 15px 0;
+		}
+	}
+	.collection {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	%title-font {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	.works-path__item-title {
+		font-size: 16px;
+		line-height: 27px;
+	}
+	.blog-box__item-title {
+		font-size: 22px;
+		line-height: 36px;
+	}
+	.gallery {
+		&__items {
+			grid-template-columns: repeat(1,1fr);
+		}
+		&__item:first-child {
+			grid-column: 1;
+			grid-row: 1;
 		}
 	}
 }
