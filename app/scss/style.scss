@@ -230,11 +230,15 @@
 	z-index: 10;
 	&__list {
 		display: flex;
+		overflow-x: auto;
+	}
+	&__item {
+		position: relative;
+		padding-right: 8px;
 	}
 	&__item::after{
 		content: '/';
-		margin-left: -4px;
-		margin-right: 4px;
+		position: absolute;
 	}
 	&__item:last-child::after {
 		display: none;
@@ -242,7 +246,7 @@
 	&__link {
 		font-size: 14px;
 		line-height: 28px;
-		color: $defolt;	
+		color: $default;	
 	}
 }
 
@@ -761,7 +765,7 @@
 		margin-bottom: 16px;
 	}
 	&__phone {
-		color: $defolt;
+		color: $default;
 	}
 	&__box {
 		padding-left: 284px;
