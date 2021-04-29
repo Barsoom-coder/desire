@@ -723,6 +723,9 @@
 .map {
 	margin-top: -53px;
 	margin-bottom: 50px;
+	iframe {
+		height: 578px;
+	}
 }
 
 .contact {
@@ -844,7 +847,7 @@
 		bottom: 0;
 		line-height: 22px;
 		padding: 0 5px;
-		padding-right: 24px;
+		// padding-right: 24px;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
