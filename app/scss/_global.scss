@@ -3,21 +3,26 @@ body {
 	height: 100%;
 }
 
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 27px;
-	color: $default;
-	overflow-x: hidden;
+	max-width: 1920px;
 	min-width: 300px;
+	color: $default;
+	margin: auto;
 }
 
 .wrapper {
+	position: relative;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 }
+
 
 .main {
 	flex: 1 0 auto;
@@ -28,7 +33,7 @@ body {
 
 .container{
   max-width: 1140px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 15px;
 }
 

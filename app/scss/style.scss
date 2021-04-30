@@ -181,7 +181,7 @@
 	&.rightside-menu--close {
 		transform: translateX(500%);
 	}
-	&--close {
+	&__close {
 		background-color: transparent;
 		border: none;
 		padding: 0;
@@ -217,6 +217,9 @@
 			margin: 0 auto;
 			background: #6D7278;
 		}
+	}
+	&__text {
+		margin-bottom: 75px;
 	}
 	&__images {
 		max-width: 485px;
